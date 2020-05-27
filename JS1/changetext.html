@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>text change</title>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia impedit vitae nostrum velit, voluptatibus officiis accusamus qui facere, dolores modi rerum reiciendis saepe explicabo. Minus excepturi impedit alias assumenda?</p>
+        <select>
+            <option value="large">Large text</option>
+            <option value="initial">Normal text</option>
+            <option value="small">Small text</option>
+        </select>
+        <script>
+            document.querySelector("select").onchange = function() {
+                document.querySelector("p").style.fontSize = this.value;
+            }
+        </script>
+    </body>
+</html>

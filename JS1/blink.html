@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            blink
+        </title>
+        <script>
+            function blink(){
+                let body = document.querySelector("body");
+                if (body.style.visibility === "hidden"){
+                body.style.visibility = "visible";
+                }
+                else{
+                    body.style.visibility = 'hidden';
+                }
+            }
+            window.setInterval(blink, 500);    
+        </script>
+    </head>
+    <body>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt praesentium consequuntur eaque voluptate quidem corrupti aliquam excepturi. Vitae doloribus in commodi similique a, illum necessitatibus laborum officia, eligendi beatae et?
+    </body>
+</html>
