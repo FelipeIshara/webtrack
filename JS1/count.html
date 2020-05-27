@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Counter</title>
+        <script>
+            let counter = 0;
+            function count()
+            {
+                counter++;
+                document.querySelector("#res").innerHTML = counter;
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <form onsubmit="count(); return false;">
+            <input type="submit">
+        </form>
+        <div id="res">
+            0
+        </div>
+    </body>
+</html>
