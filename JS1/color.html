@@ -2,21 +2,22 @@
 <html lang="en">
     <head>
         <title>RGB</title>
-        <script>
-            function red(){
-            document.querySelector("body").style.backgroundColor = "red";
-            }
-            function green(){
-            document.querySelector("body").style.backgroundColor = "green";
-            }
-            function blue(){
-            document.querySelector("body").style.backgroundColor = "blue";
-            }
-        </script>
     </head>
     <body>
         <button onclick="red(); return false">R</button>
         <button onclick="green(); return false">G</button>
         <button onclick="blue(); return false">B</button>
+        <script>
+            let BodyBackground = document.querySelector("body");
+            function red(){
+            BodyBackground.style.backgroundColor = "red";
+            }
+            function green(){
+            BodyBackground.style.backgroundColor = "green";
+            }
+            function blue(){
+            BodyBackground.style.backgroundColor = "blue";
+            }
+        </script>
     </body>
 </html>
